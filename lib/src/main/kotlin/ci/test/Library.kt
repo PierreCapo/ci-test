@@ -4,8 +4,15 @@
 package ci.test
 
 class Library {
-    fun someLibraryMethod(): Boolean {
-        println("hello world")
-        return true
+    fun evaluate(val value: Int): Boolean {
+        if (value < 10) {
+          return true
+        }
+        else if (value % 2 == 0 && value < 20) {
+            return true
+        }
+        else {
+            return false
+        }
     }
 }
