@@ -5,6 +5,7 @@ package ci.test
 
 class Library {
     fun someLibraryMethod(): Boolean {
+        println("hello world")
         return true
     }
 }
