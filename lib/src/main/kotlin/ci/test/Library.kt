@@ -4,7 +4,7 @@
 package ci.test
 
 class Library {
-    fun evaluate(val value: Int): Boolean {
+    fun evaluate(value: Int): Boolean {
         if (value < 10) {
           return true
         }
