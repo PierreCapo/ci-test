@@ -5,10 +5,26 @@ package ci.test
 
 import kotlin.test.Test
 import kotlin.test.assertTrue
+import kotlin.test.assertFalse
 
 class LibraryTest {
-    @Test fun someLibraryMethodReturnsTrue() {
+    @Test fun evaluateMethod_case1() {
         val classUnderTest = Library()
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'")
+        assertTrue(classUnderTest.evaluate(8), "evaluate should return 'true'")
+    }
+
+    @Test fun evaluateMethod_case2() {
+        val classUnderTest = Library()
+        assertFalse(classUnderTest.evaluate(11), "evaluate should return 'false'")
+    }
+
+        @Test fun evaluateMethod_case3() {
+        val classUnderTest = Library()
+        assertTrue(classUnderTest.evaluate(12), "evaluate should return 'true'")
+    }
+
+        @Test fun evaluateMethod_case4() {
+        val classUnderTest = Library()
+        assertFalse(classUnderTest.evaluate(22), "evaluate should return 'false'")
     }
 }
